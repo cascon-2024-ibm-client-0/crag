@@ -25,7 +25,7 @@ def run():
     # Define the web search tool
     web_search_tool = TavilySearchResults()
     grader_llm = getLLM(credentials,model_id="meta-llama/llama-3-405b-instruct")
-    llm = getLLM(credentials,model_id="mistralai/mixtral-8x7b-instruct-v01")
+    llm = getLLM(credentials,model_id="meta-llama/llama-3-405b-instruct")
     # Next, we define a RAG chain using LangChain.
     # Now, we're getting to the good stuff. Let's define our Graph class and the 'nodes' in our corrective RAG graph. These 'nodes', defined as python functions, correspond to the blocks in the diagrams at the beggining of this tutorial.
     rag_agent_input = RagAgentInput(
